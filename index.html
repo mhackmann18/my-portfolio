@@ -8,7 +8,7 @@
   </head>
   <body>
     <div id="app">
-      <div class="h-lvh p-4 w-lvw bg-primary">
+      <div class="p-4 w-lvw bg-primary">
         <header
           class="flex justify-between fixed px-5 w-full left-0 right-0 text-primary top-0 bg-tertiary items-center h-20 z-10"
         >
@@ -44,28 +44,96 @@
             </a>
           </div>
         </header>
-        <main
-          class="flex justify-center items-center h-full relative text-slate-200"
-        >
-          <div class="flex justify-center items-center">
-            <p class="m-4 leading-12 text-xl font-portico_outline">
-              <span class="font-portico">Hello there.</span><br />
-              I'm Matt Hackmann <br />
-              a web developer specializing in UI UX
-            </p>
-          </div>
-          <!-- Hide this image on scroll -->
-          <dotlottie-player
-            class="absolute bottom-0"
-            src="https://lottie.host/0963c188-be61-4a6a-974a-6de7fb9b3ece/F5ZVki2avn.json"
-            background="transparent"
-            speed="1"
-            style="width: 40px; height: 40px"
-            loop
-            autoplay
-          ></dotlottie-player>
+        <main class="text-slate-200">
+          <section class="h-lvh flex items-center justify-center">
+            <div class="flex flex-col justify-center items-center max-w-96 p-4">
+              <p class="leading-12 text-xl font-portico_outline mb-2">
+                <span class="font-portico">Hello there.</span><br />
+                <span class="font-portico">I'm Matt Hackmann.</span><br />
+                I specialize in developing beautiful and intuitive user
+                interfaces.
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
+                autem quis aliquid!
+              </p>
+            </div>
+            <!-- Hide this image on scroll -->
+            <dotlottie-player
+              id="mouse-scroll-animation"
+              class="absolute bottom-0 transition-opacity duration-100"
+              src="https://lottie.host/0963c188-be61-4a6a-974a-6de7fb9b3ece/F5ZVki2avn.json"
+              background="transparent"
+              speed="1"
+              style="width: 40px; height: 40px"
+              loop
+              autoplay
+            ></dotlottie-player>
+          </section>
+          <section class="h-lvh flex items-center justify-center">
+            <div class="flex flex-col justify-center items-center max-w-96 p-4">
+              <p class="leading-12 text-xl font-portico_outline mb-2">
+                <span class="font-portico">Exceptional User interfaces</span>
+              </p>
+              <p>
+                I go beyond the visuals, delivering performant, accessible, and
+                well-tested UIs.
+              </p>
+            </div>
+          </section>
+          <section class="h-lvh flex items-center justify-center">
+            <div class="flex flex-col justify-center items-center max-w-96 p-4">
+              <p class="leading-12 text-xl font-portico_outline mb-2">
+                <span class="font-portico">Cutting-edge technologies</span>
+              </p>
+              <p class="mb-6">
+                Tech moves fast, and so do I. My tech stack includes industry
+                standards, such as React.js, TypeScript, Tailwind CSS, and
+                Docker.
+              </p>
+              <div class="w-full">
+                <img
+                  src="./src/assets/images/react-icon.png"
+                  alt="react icon"
+                  class="w-12 inline-block mr-2"
+                />
+                <img
+                  src="/src/assets/images/typescript-icon.png"
+                  class="w-12 inline-block mr-2"
+                  alt="typescript icon"
+                />
+                <img
+                  src="/src/assets/images/tailwind-icon.png"
+                  class="w-12 inline-block mr-2"
+                  alt="tailwind icon"
+                />
+                <img
+                  src="/src/assets/images/docker-icon.png"
+                  class="w-12 inline-block"
+                  alt="docker icon"
+                />
+              </div>
+            </div>
+          </section>
+          <section class="h-lvh flex items-center justify-center">
+            <div class="flex flex-col justify-center items-center max-w-96 p-4">
+              <p class="leading-12 text-xl font-portico_outline mb-2">
+                <span class="font-portico">Let&apos;s connect</span>
+              </p>
+              <p class="mb-6">
+                Tech moves fast, and so do I. My tech stack includes industry
+                standards, such as React.js, TypeScript, Tailwind CSS, and
+                Docker.
+              </p>
+            </div>
+          </section>
         </main>
       </div>
+      <!-- This needs to be visible somewhere -->
+      <!-- <a target="_blank" href="https://icons8.com/icon/viH7JJy51bHj/react"
+        >react</a
+      >
+      icon by <a target="_blank" href="https://icons8.com">Icons8</a> -->
     </div>
 
     <script type="module" src="/src/index.ts"></script>

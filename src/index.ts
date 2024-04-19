@@ -1,5 +1,11 @@
-export { sum } from "./sum";
+const mouseScrollIcon = document.getElementById("mouse-scroll-animation");
 
-export default function () {
-  console.log("Hello, world!");
-}
+document.addEventListener("scroll", () => {
+  if (mouseScrollIcon) {
+    if (window.scrollY > 0) {
+      mouseScrollIcon.style.opacity = "0";
+    } else {
+      mouseScrollIcon.style.opacity = "1";
+    }
+  }
+});
