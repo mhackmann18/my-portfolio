@@ -7,7 +7,47 @@
     <title>Matt Hackmann</title>
   </head>
   <body>
-    <div id="app"><p class="text-green-500 text-3xl">dsf</p></div>
+    <div id="app">
+      <div class="h-lvh p-4 w-lvw bg-primary">
+        <header
+          class="flex justify-between font-light fixed px-4 w-lvh left-0 right-0 text-primary top-0 bg-tertiary items-center z-10"
+        >
+          <h1 class="text-2xl font-portico font-extrabold text-background my-4">
+            MH
+          </h1>
+          <!-- <h1 class="text-xl">Matt</h1> -->
+          <nav>
+            <ul class="leading-6 text-sm text-background">
+              <li class="inline-block mr-2 hover:underline">
+                <a href="/">HOME</a>
+              </li>
+              <li class="inline-block mr-2">
+                <a href="/projects.html">PROJECTS</a>
+              </li>
+              <li class="inline-block mr-2"><a href="/contact">CONTACT</a></li>
+            </ul>
+          </nav>
+        </header>
+        <main
+          class="flex justify-center items-center h-full relative text-slate-200"
+        >
+          <div class="flex justify-center items-center">
+            <p class="m-4 leading-12 text-xl font-portico_outline">
+              <span class="font-portico">Hello there.</span><br />
+              I'm Matt Hackmann a web developer specializing in UI UX. I'm
+              currently volunteering at P&amp;H MGMT LC.
+            </p>
+          </div>
+          <!-- Hide this image on scroll -->
+          <img
+            class="absolute bottom-0 w-8"
+            src="./Animation - 1713489654360.gif"
+            alt="mouse scrolling"
+          />
+        </main>
+      </div>
+    </div>
+
     <script type="module" src="/src/index.ts"></script>
   </body>
 </html>
