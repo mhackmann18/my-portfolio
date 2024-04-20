@@ -7,6 +7,7 @@ export default {
         primary: "#222222",
         secondary: "#e2e8f0",
         tertiary: "#ffd339",
+        gradient_black: "rgba(0, 0, 0, 0.75)",
       },
       fontFamily: {
         portico: ["Portico", "sans-serif"],
