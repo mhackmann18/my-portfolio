@@ -6,7 +6,7 @@ console.log(path);
 let header = document.createElement("header");
 header.innerHTML = `
 <header
-class="flex justify-between fixed px-5 w-full left-0 right-0 text-primary top-0 bg-tertiary items-center h-20 z-10"
+class="flex justify-between fixed px-5 w-full left-0 right-0 text-primary top-0 bg-tertiary items-center h-20 z-20"
 >
 <nav>
   <ul class="leading-6 text-sm text-background">
