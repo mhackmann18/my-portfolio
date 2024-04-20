@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./src/output.css" rel="stylesheet" />
+    <title>Matt Hackmann</title>
+  </head>
+  <body>
+    <div id="app">
+      <div class="bg-primary text-secondary">
+        <main class="p-4">
+          <div
+            class="overflow-hidden relative h-[calc(100vh-7rem)] rounded-lg mt-20"
+          >
+            <img
+              class="object-cover h-full"
+              src="./src/assets/gifs/screen-capture.gif"
+              alt="QueueBolt project"
+            />
+            <div class="absolute bottom-0 px-4 py-8 z-10 text-white">
+              <h2 class="font-portico text-lg">QueueBolt</h2>
+              <p class="mb-5 font-medium">
+                A queue management system for small businesses
+              </p>
+              <div class="text-primary font-bold">
+                <button class="bg-white py-1.5 px-2.5 rounded-md mr-2">
+                  Demo
+                </button>
+                <button class="bg-white py-1.5 px-2.5 rounded-md">
+                  Repository
+                </button>
+              </div>
+            </div>
+            <div class="bg-black absolute inset-0 opacity-30"></div>
+          </div>
+        </main>
+      </div>
+    </div>
+
+    <script type="module" src="/src/header.ts"></script>
+  </body>
+</html>

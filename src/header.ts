@@ -1,3 +1,7 @@
+const path = window.location.pathname;
+
+console.log(path);
+
 // Create a new HTML element
 let header = document.createElement("header");
 header.innerHTML = `
@@ -7,10 +11,16 @@ class="flex justify-between fixed px-5 w-full left-0 right-0 text-primary top-0 
 <nav>
   <ul class="leading-6 text-sm text-background">
     <li class="inline-block mr-2 hover:underline">
-      <a href="/">HOME</a>
+      <a href="/" class="${
+        path === "/" ? "underline underline-offset-2 font-medium" : ""
+      }">HOME</a>
     </li>
-    <li class="inline-block mr-2 hover:underline">
-      <a href="/projects.html">PROJECTS</a>
+    <li class="inline-block mr-2 hover:underline hover:underline-offset-2">
+      <a href="/projects.html" class="${
+        path === "/projects.html"
+          ? "underline underline-offset-2 font-medium"
+          : ""
+      }">PROJECTS</a>
     </li>
     <li class="inline-block mr-2 hover:underline">
       <a href="/src/assets/Matthew_Hackmann_Resume.pdf" target="_blank">RESUME</a>
