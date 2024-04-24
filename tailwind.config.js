@@ -7,9 +7,8 @@ export default {
         primary: "#222222",
         secondary: "#e2e8f0",
         tertiary: "#ffd339",
-        thing: "#181818",
-        secondary_dark: "#1a202c",
-        gradient_black: "rgba(0, 0, 0, 0.75)",
+        secondary_dark: "#181818",
+        transparent_black: "rgba(0, 0, 0, 0.75)",
       },
       fontFamily: {
         neutro: ["Neutro", "sans-serif"],

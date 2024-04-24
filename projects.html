@@ -13,12 +13,13 @@
       <div
         class="bg-primary text-secondary flex justify-center font-gt_america font-light"
       >
-        <main class="p-4 max-w-5xl flex flex-col">
+        <main class="p-4 max-w-5xl flex flex-col items-center">
           <!-- QueueBolt -->
           <div class="flip-card mt-20">
             <div class="flip-card-inner">
+              <!-- Card front -->
               <div class="flip-card-front">
-                <div class="overflow-hidden relative h-full rounded-lg">
+                <div class="relative h-full rounded-lg overflow-hidden">
                   <img
                     class="object-cover h-full"
                     src="./src/assets/gifs/screen-capture.gif"
@@ -33,12 +34,14 @@
                     </p>
                   </div>
                   <div
-                    class="bg-gradient-to-t absolute inset-0 from-gradient_black from-30%"
+                    class="bg-gradient-to-t absolute inset-0 from-transparent_black from-30%"
                   ></div>
                 </div>
               </div>
+
+              <!-- Card back -->
               <div
-                class="flip-card-back rounded-lg bg-thing py-5 px-5 text-left flex flex-col justify-between"
+                class="flip-card-back rounded-lg bg-secondary_dark py-5 px-5 text-left flex flex-col"
               >
                 <div>
                   <h2 class="font-neutro text-xl mb-1">QueueBolt</h2>
@@ -49,11 +52,21 @@
                     Obcaecati ab impedit perferendis possimus saepe maiores eum
                     repellat sapiente rerum a!
                   </p>
+                </div>
+
+                <div
+                  class="relative mb-3 flex-grow"
+                  style="padding-top: 56.25%"
+                >
                   <iframe
-                    class="w-full mb-3"
+                    class="absolute top-0 left-0 w-full h-full"
                     src="https://www.youtube.com/embed/NCLdf661ILE"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
                   ></iframe>
                 </div>
+
                 <div>
                   <div class="mb-2">
                     <div class="flex items-center">
@@ -90,22 +103,22 @@
                   <h3 class="font-medium text-lg">Technologies</h3>
                   <ul class="text-primary text-sm">
                     <li
-                      class="inline-block mr-1 bg-secondary px-3 rounded-md py-1.5 mt-1"
+                      class="inline-block mr-1 bg-secondary px-3 rounded-md py-1.5 mt-2"
                     >
                       React.js
                     </li>
                     <li
-                      class="inline-block mr-1 bg-secondary px-3 rounded-md py-1.5 mt-1"
+                      class="inline-block mr-1 bg-secondary px-3 rounded-md py-1.5 mt-2"
                     >
                       TypeScript
                     </li>
                     <li
-                      class="inline-block mr-1 bg-secondary px-3 rounded-md py-1.5 mt-1"
+                      class="inline-block mr-1 bg-secondary px-3 rounded-md py-1.5 mt-2"
                     >
                       Tailwind CSS
                     </li>
                     <li
-                      class="inline-block mr-1 bg-secondary px-3 rounded-md py-1.5 mt-1"
+                      class="inline-block mr-1 bg-secondary px-3 rounded-md py-1.5 mt-2"
                     >
                       .NET
                     </li>
@@ -147,7 +160,7 @@
               </div>
             </div>
             <div
-              class="bg-gradient-to-t absolute inset-0 from-gradient_black from-30%"
+              class="bg-gradient-to-t absolute inset-0 from-transparent_black from-30%"
             ></div>
           </div>
 
@@ -176,7 +189,7 @@
               </div>
             </div>
             <div
-              class="bg-gradient-to-t absolute inset-0 from-gradient_black from-30%"
+              class="bg-gradient-to-t absolute inset-0 from-transparent_black from-30%"
             ></div>
           </div>
         </main>
