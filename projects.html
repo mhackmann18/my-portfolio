@@ -4,46 +4,111 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="./src/output.css" rel="stylesheet" />
+    <link href="./src/card-flip.css" rel="stylesheet" />
     <title>Matt Hackmann</title>
   </head>
   <body>
     <div id="app">
-      <div class="bg-primary text-secondary flex justify-center">
+      <div class="bg-primary text-secondary flex justify-center font-sans">
         <main class="p-4 max-w-5xl flex flex-col">
-          <!-- QueueBolt -->
-          <div
-            class="project overflow-hidden relative h-[calc(100vh-7rem)] rounded-lg mt-20"
-          >
-            <img
-              class="object-cover h-full"
-              src="./src/assets/gifs/screen-capture.gif"
-              alt="QueueBolt project"
-            />
-            <div class="absolute bottom-0 px-4 py-8 z-10 text-secondary">
-              <h2 class="font-portico text-lg">QueueBolt</h2>
-              <p class="mb-5 font-medium">
-                A queue management system for small businesses
-              </p>
-              <div class="text-primary font-medium text-sm">
-                <a
-                  href="https://www.queuebolt.com/sign-in"
-                  target="_blank"
-                  class="bg-secondary py-2 px-2.5 rounded-md mr-2"
-                >
-                  Demo
-                </a>
-                <a
-                  href="https://github.com/mhackmann18/QueueBolt"
-                  target="_blank"
-                  class="bg-secondary py-2 px-2.5 rounded-md"
-                >
-                  Repository
-                </a>
+          <!-- <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img
+                  src="img_avatar.png"
+                  alt="Avatar"
+                  style="width: 300px; height: 300px"
+                />
+              </div>
+              <div class="flip-card-back">
+                <h1>John Doe</h1>
+                <p>Architect & Engineer</p>
+                <p>We love that guy</p>
               </div>
             </div>
-            <div
-              class="bg-gradient-to-t absolute inset-0 from-gradient_black from-30%"
-            ></div>
+          </div> -->
+          <!-- QueueBolt -->
+          <div class="flip-card mt-20">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <div class="overflow-hidden relative h-full rounded-lg">
+                  <img
+                    class="object-cover h-full"
+                    src="./src/assets/gifs/screen-capture.gif"
+                    alt="QueueBolt project"
+                  />
+                  <div
+                    class="absolute bottom-0 px-4 py-8 z-10 text-secondary text-left"
+                  >
+                    <h2 class="font-portico text-lg">QueueBolt</h2>
+                    <p class="font-medium">
+                      A queue management system for small businesses
+                    </p>
+                  </div>
+                  <div
+                    class="bg-gradient-to-t absolute inset-0 from-gradient_black from-30%"
+                  ></div>
+                </div>
+              </div>
+              <div
+                class="flip-card-back rounded-lg bg-thing shadow-md py-5 px-5 text-left flex flex-col justify-between"
+              >
+                <h2 class="font-portico text-xl mb-1">QueueBolt</h2>
+                <div>
+                  <h3 class="font-medium text-lg">About</h3>
+                  <p class="mb-2">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit
+                  </p>
+                  <iframe
+                    class="w-full"
+                    src="https://www.youtube.com/embed/NCLdf661ILE"
+                  ></iframe>
+                </div>
+                <div>
+                  <div class="mb-2">
+                    <h3 class="font-medium text-lg">DEMO</h3>
+                    <a
+                      class="text-sm"
+                      href="https://www.queuebolt.com/sign-in"
+                      target="_blank"
+                      >https://www.queuebolt.com/demo</a
+                    >
+                  </div>
+                  <div class="mb-2">
+                    <h3 class="font-medium text-lg">Github</h3>
+                    <a
+                      class="text-sm"
+                      href="https://github.com/mhackmann18/QueueBolt"
+                      target="_blank"
+                      >https://github.com/mhackmann18/QueueBolt</a
+                    >
+                  </div>
+                  <h3 class="font-medium text-lg">Technologies</h3>
+                  <ul class="text-primary text-sm">
+                    <li
+                      class="inline-block mr-1 bg-secondary px-3 rounded-md py-1.5 mt-1"
+                    >
+                      React.js
+                    </li>
+                    <li
+                      class="inline-block mr-1 bg-secondary px-3 rounded-md py-1.5 mt-1"
+                    >
+                      TypeScript
+                    </li>
+                    <li
+                      class="inline-block mr-1 bg-secondary px-3 rounded-md py-1.5 mt-1"
+                    >
+                      Tailwind CSS
+                    </li>
+                    <li
+                      class="inline-block mr-1 bg-secondary px-3 rounded-md py-1.5 mt-1"
+                    >
+                      .NET
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
           </div>
 
           <!-- RecipeReaper -->
