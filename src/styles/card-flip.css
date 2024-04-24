@@ -5,6 +5,13 @@
   max-width: 32rem;
 }
 
+@media screen and (min-width: 1024px) {
+  .flip-card {
+    max-width: 1024px;
+    height: 35rem;
+  }
+}
+
 /* This container is needed to position the front and back side */
 .flip-card-inner {
   position: relative;

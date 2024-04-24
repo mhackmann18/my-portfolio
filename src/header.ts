@@ -69,7 +69,7 @@ window.addEventListener(
     let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
     if (scrollTop > lastScrollTop) {
       // downscroll code
-      if (scrollTop > 50) header.classList.add("inactive");
+      if (scrollTop > 40) header.classList.add("inactive");
     } else {
       // upscroll code
       header.classList.remove("inactive");
