@@ -598,6 +598,10 @@ video {
   z-index: 20;
 }
 
+.mb-1 {
+  margin-bottom: 0.25rem;
+}
+
 .mb-2 {
   margin-bottom: 0.5rem;
 }
@@ -642,10 +646,6 @@ video {
   margin-top: 1.25rem;
 }
 
-.mb-1 {
-  margin-bottom: 0.25rem;
-}
-
 .inline-block {
   display: inline-block;
 }
@@ -656,10 +656,6 @@ video {
 
 .flex {
   display: flex;
-}
-
-.hidden {
-  display: none;
 }
 
 .h-20 {
@@ -843,12 +839,12 @@ video {
   font-family: GT America, sans-serif;
 }
 
-.font-portico {
-  font-family: Portico, sans-serif;
+.font-neutro {
+  font-family: Neutro, sans-serif;
 }
 
-.font-portico_outline {
-  font-family: Portico Outline, sans-serif;
+.font-neutro_outline {
+  font-family: Neutro Outline, sans-serif;
 }
 
 .text-lg {
@@ -866,20 +862,12 @@ video {
   line-height: 1.75rem;
 }
 
-.font-bold {
-  font-weight: 700;
-}
-
-.font-medium {
-  font-weight: 500;
-}
-
 .font-light {
   font-weight: 300;
 }
 
-.font-thin {
-  font-weight: 100;
+.font-medium {
+  font-weight: 500;
 }
 
 .leading-6 {
@@ -906,23 +894,12 @@ video {
   color: rgb(226 232 240 / var(--tw-text-opacity));
 }
 
-.text-gray-300 {
-  --tw-text-opacity: 1;
-  color: rgb(209 213 219 / var(--tw-text-opacity));
-}
-
 .underline {
   text-decoration-line: underline;
 }
 
 .underline-offset-2 {
   text-underline-offset: 2px;
-}
-
-.shadow-md {
-  --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
-  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 .transition-opacity {
@@ -935,16 +912,18 @@ video {
   transition-duration: 100ms;
 }
 
+/*** FONT FACES ***/
+
 /* Portico */
 
 @font-face {
-  font-family: "Portico Outline";
+  font-family: "Neutro Outline";
 
   src: url("/src/assets/fonts/neutro/Neutro-Outline.otf") format("opentype");
 }
 
 @font-face {
-  font-family: "Portico";
+  font-family: "Neutro";
 
   src: url("/src/assets/fonts/neutro/Neutro-ExtraBold.otf") format("opentype");
 }

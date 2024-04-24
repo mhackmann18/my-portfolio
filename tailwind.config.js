@@ -12,8 +12,8 @@ export default {
         gradient_black: "rgba(0, 0, 0, 0.75)",
       },
       fontFamily: {
-        portico: ["Portico", "sans-serif"],
-        portico_outline: ["Portico Outline", "sans-serif"],
+        neutro: ["Neutro", "sans-serif"],
+        neutro_outline: ["Neutro Outline", "sans-serif"],
         gt_america: ["GT America", "sans-serif"],
       },
       fontWeight: {

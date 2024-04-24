@@ -2,13 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+/*** FONT FACES ***/
+
 /* Portico */
 @font-face {
-  font-family: "Portico Outline";
+  font-family: "Neutro Outline";
   src: url("/src/assets/fonts/neutro/Neutro-Outline.otf") format("opentype");
 }
 @font-face {
-  font-family: "Portico";
+  font-family: "Neutro";
   src: url("/src/assets/fonts/neutro/Neutro-ExtraBold.otf") format("opentype");
 }
 
