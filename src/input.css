@@ -1,6 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Portico */
 @font-face {
   font-family: "Portico Outline";
   src: url("/src/assets/fonts/neutro/Neutro-Outline.otf") format("opentype");
@@ -8,4 +10,48 @@
 @font-face {
   font-family: "Portico";
   src: url("/src/assets/fonts/neutro/Neutro-ExtraBold.otf") format("opentype");
+}
+
+/* GT America */
+@font-face {
+  font-family: "GT America";
+  src: url("/src/assets/fonts/gt_america/GT-America-Condensed-Thin-Trial.otf")
+    format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: "GT America";
+  src: url("/src/assets/fonts/gt_america/GT-America-Condensed-Light-Trial.otf")
+    format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "GT America";
+  src: url("/src/assets/fonts/gt_america/GT-America-Condensed-Regular-Trial.otf")
+    format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "GT America";
+  src: url("/src/assets/fonts/gt_america/GT-America-Condensed-Medium-Trial.otf")
+    format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "GT America";
+  src: url("/src/assets/fonts/gt_america/GT-America-Condensed-Bold-Trial.otf")
+    format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "GT America";
+  src: url("/src/assets/fonts/gt_america/GT-America-Condensed-Black-Trial.otf")
+    format("truetype");
+  font-weight: 900;
+  font-style: normal;
 }

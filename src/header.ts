@@ -1,10 +1,10 @@
 const path = window.location.pathname;
 
-console.log(path);
-
 // Create a new HTML element
 let header = document.createElement("header");
+
 header.classList.add(
+  "header",
   "flex",
   "justify-center",
   "fixed",
@@ -21,7 +21,7 @@ header.classList.add(
 );
 
 header.innerHTML = `
-  <div class="max-w-6xl flex justify-between w-full">
+  <div class="max-w-6xl flex justify-between w-full font-gt_america">
     <nav>
       <ul class="leading-6 text-sm text-background">
         <li class="inline-block mr-2 hover:underline">
@@ -61,6 +61,26 @@ header.innerHTML = `
     </div>
   </div>
 `;
+
+let lastScrollTop = 0;
+
+window.addEventListener(
+  "scroll",
+  function () {
+    let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    if (scrollTop > lastScrollTop) {
+      // downscroll code
+      header.classList.remove("active");
+      header.classList.add("inactive");
+    } else {
+      // upscroll code
+      header.classList.remove("inactive");
+      header.classList.add("active");
+    }
+    lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // For Mobile or negative scrolling
+  },
+  false
+);
 
 // Append the header to the body of each page
 document.body.prepend(header);

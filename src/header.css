@@ -1,0 +1,11 @@
+.header {
+  transition: transform 0.2s ease-out;
+}
+
+.header.active {
+  transform: translateY(0);
+}
+
+.header.inactive {
+  transform: translateY(-90px);
+}

@@ -5,28 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="./src/output.css" rel="stylesheet" />
     <link href="./src/card-flip.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/src/header.css" />
     <title>Matt Hackmann</title>
   </head>
   <body>
     <div id="app">
-      <div class="bg-primary text-secondary flex justify-center font-sans">
+      <div
+        class="bg-primary text-secondary flex justify-center font-gt_america font-light"
+      >
         <main class="p-4 max-w-5xl flex flex-col">
-          <!-- <div class="flip-card">
-            <div class="flip-card-inner">
-              <div class="flip-card-front">
-                <img
-                  src="img_avatar.png"
-                  alt="Avatar"
-                  style="width: 300px; height: 300px"
-                />
-              </div>
-              <div class="flip-card-back">
-                <h1>John Doe</h1>
-                <p>Architect & Engineer</p>
-                <p>We love that guy</p>
-              </div>
-            </div>
-          </div> -->
           <!-- QueueBolt -->
           <div class="flip-card mt-20">
             <div class="flip-card-inner">
@@ -53,31 +40,48 @@
               <div
                 class="flip-card-back rounded-lg bg-thing shadow-md py-5 px-5 text-left flex flex-col justify-between"
               >
-                <h2 class="font-portico text-xl mb-1">QueueBolt</h2>
                 <div>
-                  <h3 class="font-medium text-lg">About</h3>
-                  <p class="mb-2">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit
+                  <h2 class="font-portico text-xl mb-1">QueueBolt</h2>
+                  <!-- <h3 class="font-medium text-lg">About</h3> -->
+                  <p class="mb-4 text-gray-400">
+                    I am the sole developer and maintainer of QueueBolt, a queue
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Obcaecati ab impedit perferendis possimus saepe maiores eum
+                    repellat sapiente rerum a!
                   </p>
                   <iframe
-                    class="w-full"
+                    class="w-full mb-3"
                     src="https://www.youtube.com/embed/NCLdf661ILE"
                   ></iframe>
                 </div>
                 <div>
                   <div class="mb-2">
-                    <h3 class="font-medium text-lg">DEMO</h3>
+                    <div class="flex items-center">
+                      <img
+                        class="w-5 mr-1 h-5"
+                        src="/src/assets/images/web-icon.png"
+                        alt="website icon"
+                      />
+                      <h3 class="font-medium text-lg">Demo</h3>
+                    </div>
                     <a
-                      class="text-sm"
+                      class="text-sm text-gray-400"
                       href="https://www.queuebolt.com/sign-in"
                       target="_blank"
                       >https://www.queuebolt.com/demo</a
                     >
                   </div>
                   <div class="mb-2">
-                    <h3 class="font-medium text-lg">Github</h3>
+                    <div class="flex items-center">
+                      <img
+                        class="h-5 mr-1"
+                        src="/src/assets/images/github-icon.png"
+                        alt="github logo"
+                      />
+                      <h3 class="font-medium text-lg inline-block">GitHub</h3>
+                    </div>
                     <a
-                      class="text-sm"
+                      class="text-sm text-gray-400"
                       href="https://github.com/mhackmann18/QueueBolt"
                       target="_blank"
                       >https://github.com/mhackmann18/QueueBolt</a

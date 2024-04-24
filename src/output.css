@@ -598,12 +598,16 @@ video {
   z-index: 20;
 }
 
-.mb-1 {
-  margin-bottom: 0.25rem;
-}
-
 .mb-2 {
   margin-bottom: 0.5rem;
+}
+
+.mb-3 {
+  margin-bottom: 0.75rem;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
 }
 
 .mb-5 {
@@ -638,6 +642,10 @@ video {
   margin-top: 1.25rem;
 }
 
+.mb-1 {
+  margin-bottom: 0.25rem;
+}
+
 .inline-block {
   display: inline-block;
 }
@@ -650,8 +658,16 @@ video {
   display: flex;
 }
 
+.hidden {
+  display: none;
+}
+
 .h-20 {
   height: 5rem;
+}
+
+.h-5 {
+  height: 1.25rem;
 }
 
 .h-\[calc\(100vh-7rem\)\] {
@@ -666,32 +682,12 @@ video {
   height: 100lvh;
 }
 
-.max-h-96 {
-  max-height: 24rem;
-}
-
-.max-h-\[calc\(30rem\)\] {
-  max-height: calc(30rem);
-}
-
-.max-h-\[calc\(20rem\)\] {
-  max-height: calc(20rem);
-}
-
-.max-h-\[calc\(10rem\)\] {
-  max-height: calc(10rem);
-}
-
-.max-h-\[calc\(32rem\)\] {
-  max-height: calc(32rem);
-}
-
-.max-h-\[calc\(34rem\)\] {
-  max-height: calc(34rem);
-}
-
 .w-12 {
   width: 3rem;
+}
+
+.w-5 {
+  width: 1.25rem;
 }
 
 .w-6 {
@@ -843,20 +839,16 @@ video {
   text-align: left;
 }
 
+.font-gt_america {
+  font-family: GT America, sans-serif;
+}
+
 .font-portico {
   font-family: Portico, sans-serif;
 }
 
 .font-portico_outline {
   font-family: Portico Outline, sans-serif;
-}
-
-.font-sans {
-  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-}
-
-.font-mono {
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
 .text-lg {
@@ -874,12 +866,29 @@ video {
   line-height: 1.75rem;
 }
 
+.font-bold {
+  font-weight: 700;
+}
+
 .font-medium {
   font-weight: 500;
 }
 
+.font-light {
+  font-weight: 300;
+}
+
+.font-thin {
+  font-weight: 100;
+}
+
 .leading-6 {
   line-height: 1.5rem;
+}
+
+.text-gray-400 {
+  --tw-text-opacity: 1;
+  color: rgb(156 163 175 / var(--tw-text-opacity));
 }
 
 .text-primary {
@@ -895,6 +904,11 @@ video {
 .text-slate-200 {
   --tw-text-opacity: 1;
   color: rgb(226 232 240 / var(--tw-text-opacity));
+}
+
+.text-gray-300 {
+  --tw-text-opacity: 1;
+  color: rgb(209 213 219 / var(--tw-text-opacity));
 }
 
 .underline {
@@ -921,6 +935,8 @@ video {
   transition-duration: 100ms;
 }
 
+/* Portico */
+
 @font-face {
   font-family: "Portico Outline";
 
@@ -931,6 +947,74 @@ video {
   font-family: "Portico";
 
   src: url("/src/assets/fonts/neutro/Neutro-ExtraBold.otf") format("opentype");
+}
+
+/* GT America */
+
+@font-face {
+  font-family: "GT America";
+
+  src: url("/src/assets/fonts/gt_america/GT-America-Condensed-Thin-Trial.otf")
+    format("truetype");
+
+  font-weight: 100;
+
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GT America";
+
+  src: url("/src/assets/fonts/gt_america/GT-America-Condensed-Light-Trial.otf")
+    format("truetype");
+
+  font-weight: 300;
+
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GT America";
+
+  src: url("/src/assets/fonts/gt_america/GT-America-Condensed-Regular-Trial.otf")
+    format("truetype");
+
+  font-weight: 400;
+
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GT America";
+
+  src: url("/src/assets/fonts/gt_america/GT-America-Condensed-Medium-Trial.otf")
+    format("truetype");
+
+  font-weight: 500;
+
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GT America";
+
+  src: url("/src/assets/fonts/gt_america/GT-America-Condensed-Bold-Trial.otf")
+    format("truetype");
+
+  font-weight: 700;
+
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GT America";
+
+  src: url("/src/assets/fonts/gt_america/GT-America-Condensed-Black-Trial.otf")
+    format("truetype");
+
+  font-weight: 900;
+
+  font-style: normal;
 }
 
 .hover\:underline:hover {
