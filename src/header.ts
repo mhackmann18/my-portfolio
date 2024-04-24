@@ -1,6 +1,5 @@
 const path = window.location.pathname;
 
-// Create a new HTML element
 let header = document.createElement("header");
 
 header.classList.add(
@@ -70,12 +69,10 @@ window.addEventListener(
     let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
     if (scrollTop > lastScrollTop) {
       // downscroll code
-      // header.classList.remove("active");
-      header.classList.add("inactive");
+      if (scrollTop > 50) header.classList.add("inactive");
     } else {
       // upscroll code
       header.classList.remove("inactive");
-      // header.classList.add("active");
     }
     lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // For Mobile or negative scrolling
   },
