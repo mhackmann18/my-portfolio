@@ -70,12 +70,12 @@ window.addEventListener(
     let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
     if (scrollTop > lastScrollTop) {
       // downscroll code
-      header.classList.remove("active");
+      // header.classList.remove("active");
       header.classList.add("inactive");
     } else {
       // upscroll code
       header.classList.remove("inactive");
-      header.classList.add("active");
+      // header.classList.add("active");
     }
     lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // For Mobile or negative scrolling
   },

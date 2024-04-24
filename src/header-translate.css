@@ -1,0 +1,10 @@
+/* By default, header is normal y position */
+.header {
+  transition: transform 0.14s linear;
+  transform: translateY(0);
+}
+
+/* When header is inactive, move it off the screen */
+.header.inactive {
+  transform: translateY(-5rem);
+}
