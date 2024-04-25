@@ -11,9 +11,9 @@
   <body>
     <div id="app">
       <div
-        class="bg-primary text-secondary flex justify-center font-gt_america font-light"
+        class="bg-primary text-secondary flex justify-center font-gt_america font-light w-full"
       >
-        <main class="p-4 max-w-6xl flex flex-col items-center">
+        <main class="p-4 max-w-6xl flex flex-col items-center w-full">
           <!-- QueueBolt -->
           <div class="flip-card mt-20">
             <div class="flip-card-inner">
@@ -41,8 +41,14 @@
 
               <!-- Card back -->
               <div
-                class="flip-card-back rounded-lg bg-secondary_dark p-5 lg:p-8 text-left flex flex-col justify-between lg:flex-row"
+                class="flip-card-back rounded-lg bg-secondary_dark p-5 lg:p-8 text-left flex flex-col justify-between lg:flex-row relative"
               >
+                <button class="close-project-btn absolute top-4 right-4 w-4">
+                  <img
+                    src="/src/assets/images/close-icon.png"
+                    alt="close button"
+                  />
+                </button>
                 <div class="lg:max-w-2xl lg:mr-8 flex flex-col">
                   <!-- Title and description -->
                   <div class="order-1 lg:order-2">
@@ -94,7 +100,7 @@
                       <h3 class="font-medium text-lg">Demo</h3>
                     </div>
                     <a
-                      class="text-sm text-gray-400"
+                      class="text-sm text-gray-400 font-medium"
                       href="https://www.queuebolt.com/sign-in"
                       target="_blank"
                       >https://www.queuebolt.com/demo</a
@@ -111,7 +117,7 @@
                       <h3 class="font-medium text-lg inline-block">GitHub</h3>
                     </div>
                     <a
-                      class="text-sm text-gray-400"
+                      class="text-sm text-gray-400 font-medium"
                       href="https://github.com/mhackmann18/QueueBolt"
                       target="_blank"
                       >https://github.com/mhackmann18/QueueBolt</a
@@ -145,75 +151,285 @@
               </div>
             </div>
           </div>
-
           <!-- RecipeReaper -->
-          <div
-            class="project overflow-hidden relative h-[calc(100vh-7rem)] rounded-lg mt-5"
-          >
-            <img
-              class="object-cover h-full"
-              src="./src/assets/gifs/screen-capture.gif"
-              alt="QueueBolt project"
-            />
-            <div class="absolute bottom-0 px-4 py-8 z-10 text-secondary">
-              <h2 class="font-neutro text-lg">RecipeReaper</h2>
-              <p class="mb-5 font-medium">
-                A recipe management app for home cooks
-              </p>
-              <div class="text-primary font-medium text-sm">
-                <a
-                  href="https://www.recipereaper.com"
-                  target="_blank"
-                  class="bg-secondary py-2 px-2.5 rounded-md mr-2"
-                >
-                  Demo
-                </a>
-                <a
-                  href="https://github.com/mhackmann18/RecipeReaper"
-                  target="_blank"
-                  class="bg-secondary py-2 px-2.5 rounded-md"
-                >
-                  Repository
-                </a>
+          <div class="flip-card mt-5">
+            <div class="flip-card-inner">
+              <!-- Card front -->
+              <div class="flip-card-front">
+                <div class="relative h-full w-full rounded-lg overflow-hidden">
+                  <img
+                    class="object-cover h-full w-full"
+                    src="./src/assets/gifs/screen-capture.gif"
+                    alt="QueueBolt project"
+                  />
+                  <div
+                    class="absolute bottom-0 px-4 py-8 z-10 text-secondary text-left"
+                  >
+                    <h2 class="font-neutro text-lg">QueueBolt</h2>
+                    <p class="font-medium">
+                      A queue management system for small businesses
+                    </p>
+                  </div>
+                  <div
+                    class="bg-gradient-to-t absolute inset-0 from-transparent_black from-30%"
+                  ></div>
+                </div>
               </div>
-            </div>
-            <div
-              class="bg-gradient-to-t absolute inset-0 from-transparent_black from-30%"
-            ></div>
-          </div>
 
-          <!-- CS Showdown -->
-          <div
-            class="project overflow-hidden relative h-[calc(100vh-7rem)] rounded-lg mt-5"
-          >
-            <img
-              class="object-cover h-full"
-              src="./src/assets/gifs/screen-capture.gif"
-              alt="QueueBolt project"
-            />
-            <div class="absolute bottom-0 px-4 py-8 z-10 text-secondary">
-              <h2 class="font-neutro text-lg">CS Showdown</h2>
-              <p class="mb-5 font-medium">
-                A 2D multiplayer fighting game with a fun twist
-              </p>
-              <div class="text-primary font-medium text-sm">
-                <a
-                  href="https://www.recipereaper.com"
-                  target="_blank"
-                  class="bg-secondary py-2 px-2.5 rounded-md mr-2"
-                >
-                  Demo
-                </a>
+              <!-- Card back -->
+              <div
+                class="flip-card-back rounded-lg bg-secondary_dark p-5 lg:p-8 text-left flex flex-col justify-between lg:flex-row relative"
+              >
+                <button class="close-project-btn absolute top-4 right-4 w-4">
+                  <img
+                    src="/src/assets/images/close-icon.png"
+                    alt="close button"
+                  />
+                </button>
+                <div class="lg:max-w-2xl lg:mr-8 flex flex-col">
+                  <!-- Title and description -->
+                  <div class="order-1 lg:order-2">
+                    <h2 class="font-neutro text-xl mb-1">QueueBolt</h2>
+                    <p class="mb-4 text-gray-400">
+                      I am the sole developer and maintainer of QueueBolt, a
+                      queue Lorem ipsum dolor sit amet consectetur adipisicing
+                      elit. Obcaecati ab impedit perferendis possimus saepe
+                      maiores eum repellat sapiente rerum a!
+                    </p>
+                  </div>
+
+                  <!-- Youtube demo -->
+                  <div
+                    class="relative mb-3 order-2 lg:order-1 lg:mb-6"
+                    style="padding-top: 56.25%"
+                  >
+                    <iframe
+                      class="absolute top-0 left-0 w-full h-full"
+                      src="https://www.youtube.com/embed/NCLdf661ILE"
+                      frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowfullscreen
+                    ></iframe>
+                  </div>
+                </div>
+
+                <div class="lg:flex-grow lg:min-w-80 lg:max-w-80">
+                  <!-- In depth description -->
+                  <div class="hidden lg:block mb-2">
+                    <h3 class="font-medium text-lg">Overview</h3>
+                    <p class="text-gray-400 text-sm">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Illo doloremque praesentium fuga magnam vitae libero ipsa
+                      fugit velit, accusantium nisi molestiae voluptate
+                      consectetur ad commodi veritatis, rem odit itaque?
+                      Voluptate minima numquam possimus! Earum laboriosam
+                      repellendus, sit quod fugiat perspiciatis.
+                    </p>
+                  </div>
+                  <!-- Demo link -->
+                  <div class="mb-2 w-full">
+                    <div class="flex items-center">
+                      <img
+                        class="w-5 mr-1 h-5"
+                        src="/src/assets/images/web-icon.png"
+                        alt="website icon"
+                      />
+                      <h3 class="font-medium text-lg">Demo</h3>
+                    </div>
+                    <a
+                      class="text-sm text-gray-400 font-medium"
+                      href="https://www.queuebolt.com/sign-in"
+                      target="_blank"
+                      >https://www.queuebolt.com/demo</a
+                    >
+                  </div>
+                  <!-- GitHub link -->
+                  <div class="mb-2">
+                    <div class="flex items-center">
+                      <img
+                        class="h-5 mr-1"
+                        src="/src/assets/images/github-icon.png"
+                        alt="github logo"
+                      />
+                      <h3 class="font-medium text-lg inline-block">GitHub</h3>
+                    </div>
+                    <a
+                      class="text-sm text-gray-400 font-medium"
+                      href="https://github.com/mhackmann18/QueueBolt"
+                      target="_blank"
+                      >https://github.com/mhackmann18/QueueBolt</a
+                    >
+                  </div>
+                  <!-- Technologies used -->
+                  <h3 class="font-medium text-lg">Technologies</h3>
+                  <ul class="text-primary text-sm">
+                    <li
+                      class="inline-block mr-1 bg-secondary px-3 rounded-md py-1.5 mt-2"
+                    >
+                      React.js
+                    </li>
+                    <li
+                      class="inline-block mr-1 bg-secondary px-3 rounded-md py-1.5 mt-2"
+                    >
+                      TypeScript
+                    </li>
+                    <li
+                      class="inline-block mr-1 bg-secondary px-3 rounded-md py-1.5 mt-2"
+                    >
+                      Tailwind CSS
+                    </li>
+                    <li
+                      class="inline-block mr-1 bg-secondary px-3 rounded-md py-1.5 mt-2"
+                    >
+                      .NET
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
-            <div
-              class="bg-gradient-to-t absolute inset-0 from-transparent_black from-30%"
-            ></div>
+          </div>
+          <!-- CS Showdown -->
+          <div class="flip-card mt-5">
+            <div class="flip-card-inner">
+              <!-- Card front -->
+              <div class="flip-card-front">
+                <div class="relative h-full w-full rounded-lg overflow-hidden">
+                  <img
+                    class="object-cover h-full w-full"
+                    src="./src/assets/gifs/screen-capture.gif"
+                    alt="QueueBolt project"
+                  />
+                  <div
+                    class="absolute bottom-0 px-4 py-8 z-10 text-secondary text-left"
+                  >
+                    <h2 class="font-neutro text-lg">QueueBolt</h2>
+                    <p class="font-medium">
+                      A queue management system for small businesses
+                    </p>
+                  </div>
+                  <div
+                    class="bg-gradient-to-t absolute inset-0 from-transparent_black from-30%"
+                  ></div>
+                </div>
+              </div>
+
+              <!-- Card back -->
+              <div
+                class="flip-card-back rounded-lg bg-secondary_dark p-5 lg:p-8 text-left flex flex-col justify-between lg:flex-row relative"
+              >
+                <button class="close-project-btn absolute top-4 right-4 w-4">
+                  <img
+                    src="/src/assets/images/close-icon.png"
+                    alt="close button"
+                  />
+                </button>
+                <div class="lg:max-w-2xl lg:mr-8 flex flex-col">
+                  <!-- Title and description -->
+                  <div class="order-1 lg:order-2">
+                    <h2 class="font-neutro text-xl mb-1">QueueBolt</h2>
+                    <p class="mb-4 text-gray-400">
+                      I am the sole developer and maintainer of QueueBolt, a
+                      queue Lorem ipsum dolor sit amet consectetur adipisicing
+                      elit. Obcaecati ab impedit perferendis possimus saepe
+                      maiores eum repellat sapiente rerum a!
+                    </p>
+                  </div>
+
+                  <!-- Youtube demo -->
+                  <div
+                    class="relative mb-3 order-2 lg:order-1 lg:mb-6"
+                    style="padding-top: 56.25%"
+                  >
+                    <iframe
+                      class="absolute top-0 left-0 w-full h-full"
+                      src="https://www.youtube.com/embed/NCLdf661ILE"
+                      frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowfullscreen
+                    ></iframe>
+                  </div>
+                </div>
+
+                <div class="lg:flex-grow lg:min-w-80 lg:max-w-80">
+                  <!-- In depth description -->
+                  <div class="hidden lg:block mb-2">
+                    <h3 class="font-medium text-lg">Overview</h3>
+                    <p class="text-gray-400 text-sm">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Illo doloremque praesentium fuga magnam vitae libero ipsa
+                      fugit velit, accusantium nisi molestiae voluptate
+                      consectetur ad commodi veritatis, rem odit itaque?
+                      Voluptate minima numquam possimus! Earum laboriosam
+                      repellendus, sit quod fugiat perspiciatis.
+                    </p>
+                  </div>
+                  <!-- Demo link -->
+                  <div class="mb-2 w-full">
+                    <div class="flex items-center">
+                      <img
+                        class="w-5 mr-1 h-5"
+                        src="/src/assets/images/web-icon.png"
+                        alt="website icon"
+                      />
+                      <h3 class="font-medium text-lg">Demo</h3>
+                    </div>
+                    <a
+                      class="text-sm text-gray-400 font-medium"
+                      href="https://www.queuebolt.com/sign-in"
+                      target="_blank"
+                      >https://www.queuebolt.com/demo</a
+                    >
+                  </div>
+                  <!-- GitHub link -->
+                  <div class="mb-2">
+                    <div class="flex items-center">
+                      <img
+                        class="h-5 mr-1"
+                        src="/src/assets/images/github-icon.png"
+                        alt="github logo"
+                      />
+                      <h3 class="font-medium text-lg inline-block">GitHub</h3>
+                    </div>
+                    <a
+                      class="text-sm text-gray-400 font-medium"
+                      href="https://github.com/mhackmann18/QueueBolt"
+                      target="_blank"
+                      >https://github.com/mhackmann18/QueueBolt</a
+                    >
+                  </div>
+                  <!-- Technologies used -->
+                  <h3 class="font-medium text-lg">Technologies</h3>
+                  <ul class="text-primary text-sm">
+                    <li
+                      class="inline-block mr-1 bg-secondary px-3 rounded-md py-1.5 mt-2"
+                    >
+                      React.js
+                    </li>
+                    <li
+                      class="inline-block mr-1 bg-secondary px-3 rounded-md py-1.5 mt-2"
+                    >
+                      TypeScript
+                    </li>
+                    <li
+                      class="inline-block mr-1 bg-secondary px-3 rounded-md py-1.5 mt-2"
+                    >
+                      Tailwind CSS
+                    </li>
+                    <li
+                      class="inline-block mr-1 bg-secondary px-3 rounded-md py-1.5 mt-2"
+                    >
+                      .NET
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
           </div>
         </main>
       </div>
     </div>
 
     <script type="module" src="/src/header.ts"></script>
+    <script type="module" src="/src/flipCard.ts"></script>
   </body>
 </html>
