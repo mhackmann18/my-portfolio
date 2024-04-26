@@ -36,7 +36,7 @@ header.innerHTML = `
           }">PROJECTS</a>
         </li>
         <li class="inline-block mr-2 hover:underline">
-          <a href="/assets/Matthew_Hackmann_Resume.pdf" target="_blank">RESUME</a>
+          <a href="/Matthew_Hackmann_Resume.pdf" target="_blank">RESUME</a>
         </li>
       </ul>
     </nav>
