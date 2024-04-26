@@ -9,7 +9,7 @@ export default defineConfig({
         "index.html",
         "projects.html",
         "src/assets/Matthew_Hackmann_Resume.pdf",
-        "src/assets/images/email-icon.png",
+        "src/header.ts",
       ],
     },
   },
