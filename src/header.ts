@@ -61,23 +61,5 @@ header.innerHTML = `
   </div>
 `;
 
-let lastScrollTop = 0;
-
-window.addEventListener(
-  "scroll",
-  function () {
-    let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-    if (scrollTop > lastScrollTop) {
-      // downscroll code
-      if (scrollTop > 40) header.classList.add("inactive");
-    } else {
-      // upscroll code
-      header.classList.remove("inactive");
-    }
-    lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // For Mobile or negative scrolling
-  },
-  false
-);
-
 // Append the header to the body of each page
 document.body.prepend(header);

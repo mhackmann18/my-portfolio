@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+.gradient-bg {
+  background: radial-gradient(circle, #333, #111);
+}
+
 /*** FONT FACES ***/
 
 /* Portico */

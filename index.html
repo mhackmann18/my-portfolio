@@ -4,59 +4,108 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="./src/styles/output.css" rel="stylesheet" />
-    <link href="/src/styles/header-translate.css" rel="stylesheet" />
     <title>Matt Hackmann</title>
   </head>
   <body>
     <div id="app">
-      <div class="p-4 bg-primary font-gt_america">
-        <main class="text-slate-200">
-          <section class="h-lvh flex items-center justify-center">
-            <div class="flex flex-col justify-center items-center max-w-96 p-4">
-              <p class="leading-12 text-xl font-neutro_outline mb-2">
-                <span class="font-neutro">Hello there.</span><br />
-                <span class="font-neutro">I'm Matt Hackmann.</span><br />
-                I specialize in developing beautiful and intuitive user
-                interfaces.
+      <div class="gradient-bg fixed inset-0 -z-10"></div>
+      <div class="p-4 font-gt_america flex">
+        <main class="text-slate-200 w-full text-lg max-w-5xl mx-auto">
+          <div class="max-w-3xl">
+            <!-- Intro -->
+            <section class="h-lvh flex justify-center flex-col text-left">
+              <h2 class="font-neutro_outline text-5xl mb-3">
+                Hello<br />
+                There<br /><span class="font-neutro text-5xl"
+                  >I&apos;m Matt Hack<br />
+                  mann</span
+                >
+              </h2>
+              <p class="text-secondary_text">
+                I&apos;m a frontend software developer based in Missouri. With a
+                keen eye for detail and design, I pride myself in creating
+                sharp, modern, and responsive user interfaces.
               </p>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
-                autem quis aliquid!
+
+              <!-- Hide this image on scroll -->
+              <dotlottie-player
+                id="mouse-scroll-animation"
+                class="absolute bottom-2 transition-opacity duration-100"
+                src="https://lottie.host/0963c188-be61-4a6a-974a-6de7fb9b3ece/F5ZVki2avn.json"
+                background="transparent"
+                speed="1"
+                style="width: 40px; height: 40px"
+                loop
+                autoplay
+              ></dotlottie-player>
+            </section>
+
+            <!-- Work History -->
+            <section class="mb-32">
+              <h2 class="font-neutro_outline text-5xl mb-2">
+                <span class="font-neutro">Work<br />History</span>
+              </h2>
+              <p class="text-lg text-secondary_text">
+                In 2022, I graduated from the University of Missouri with a
+                bachelor&apos;s degree in computer science. Since then, I've
+                been building on my experience through passion projects and
+                freelance work.
               </p>
-            </div>
-            <!-- Hide this image on scroll -->
-            <dotlottie-player
-              id="mouse-scroll-animation"
-              class="absolute bottom-0 transition-opacity duration-100"
-              src="https://lottie.host/0963c188-be61-4a6a-974a-6de7fb9b3ece/F5ZVki2avn.json"
-              background="transparent"
-              speed="1"
-              style="width: 40px; height: 40px"
-              loop
-              autoplay
-            ></dotlottie-player>
-          </section>
-          <section class="h-lvh flex items-center justify-center">
-            <div class="flex flex-col justify-center items-center max-w-96 p-4">
-              <p class="leading-12 text-xl font-neutro_outline mb-2">
-                <span class="font-neutro">Exceptional User interfaces</span>
+            </section>
+
+            <!-- Guiding beliefs -->
+            <section class="mb-32">
+              <h2 class="font-neutro text-5xl mb-8">
+                Guiding<br />
+                beliefs
+              </h2>
+              <ul>
+                <li>
+                  <h2 class="text-lg font-bold font-neutro">
+                    Put the User first
+                  </h2>
+                  <p class="mb-6 text-secondary_text">
+                    Through every phase of development, from wireframing to
+                    writing tests, I keep the user front and center.
+                  </p>
+                </li>
+                <li>
+                  <h2 class="font-neutro_outline text-lg">
+                    <span class="font-neutro">enjoy work</span>
+                  </h2>
+                  <p class="mb-6 text-secondary_text">
+                    For some, there's work and then there's play. For me, it's
+                    all play. I love what I do, and I'm always looking for new
+                    ways to improve my skills and learn new technologies.
+                  </p>
+                </li>
+                <li>
+                  <h2 class="font-neutro_outline text-lg">
+                    <span class="font-neutro">Be versatile</span>
+                  </h2>
+                  <p class="text-secondary_text">
+                    Though my focus is on the frontend, I believe that
+                    understanding the full software development lifecycle, from
+                    databases to devops, is necessary to succeed.
+                  </p>
+                </li>
+              </ul>
+            </section>
+
+            <!-- Tech I Love -->
+            <section class="mb-32">
+              <!-- Technologies -->
+              <h2 class="font-neutro text-5xl mb-2">
+                Tech<br />
+                I love
+              </h2>
+              <p class="mb-6 text-secondary_text">
+                I&apos;ve worked with a wide array of technologies, but these
+                are some of my long-standing favorites: React.js, TypeScript,
+                Tailwind, and Docker.
               </p>
-              <p>
-                I go beyond the visuals, delivering performant, accessible, and
-                well-tested UIs.
-              </p>
-            </div>
-          </section>
-          <section class="h-lvh flex items-center justify-center">
-            <div class="flex flex-col justify-center items-center max-w-96 p-4">
-              <p class="leading-12 text-xl font-neutro_outline mb-2">
-                <span class="font-neutro">Cutting-edge technologies</span>
-              </p>
-              <p class="mb-6">
-                Tech moves fast, and so do I. My tech stack includes industry
-                standards, such as React.js, TypeScript, Tailwind CSS, and
-                Docker.
-              </p>
+
+              <!-- Tech icons -->
               <div class="w-full">
                 <img
                   src="./src/assets/images/react-icon.png"
@@ -79,20 +128,41 @@
                   alt="docker icon"
                 />
               </div>
-            </div>
-          </section>
-          <section class="h-lvh flex items-center justify-center">
-            <div class="flex flex-col justify-center items-center max-w-96 p-4">
-              <p class="leading-12 text-xl font-neutro_outline mb-2">
-                <span class="font-neutro">Let&apos;s connect</span>
-              </p>
-              <p class="mb-6">
-                Tech moves fast, and so do I. My tech stack includes industry
-                standards, such as React.js, TypeScript, Tailwind CSS, and
-                Docker.
-              </p>
-            </div>
-          </section>
+            </section>
+
+            <!-- Let's Connect -->
+            <section class="mb-32">
+              <div class="">
+                <h2
+                  class="leading-12 text-5xl font-neutro mb-2 w-full text-left"
+                >
+                  Let&apos;s<br />Connect
+                </h2>
+                <div class="">
+                  <p class="mb-6 text-lg text-secondary_text">
+                    Whether you&apos;re a recruiter, a small business owner, or
+                    a fellow enthusiast, I&apos;d love to hear about any work
+                    opportunities.
+                  </p>
+                  <div class="flex items-center">
+                    <img
+                      src="/src/assets/images/email-icon-1.png"
+                      alt="email icon"
+                      class="w-6 inline mr-2"
+                    />
+                    <a
+                      class="underline underline-offset-2 text-lg"
+                      href="mailto:mhackmann18@gmail.com"
+                      >mhackmann18@gmail.com</a
+                    >
+                  </div>
+                  <p class="text-xs mt-1">
+                    (Beware: My inbox operates on island time.)
+                  </p>
+                </div>
+              </div>
+            </section>
+          </div>
         </main>
       </div>
       <!-- This needs to be visible somewhere -->
