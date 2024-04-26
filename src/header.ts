@@ -26,7 +26,7 @@ header.innerHTML = `
         <li class="inline-block mr-2 hover:underline">
           <a href="/" class="${
             path === "/" ? "underline underline-offset-2 font-medium" : ""
-          }">HOME</a>
+          }">ABOUT</a>
         </li>
         <li class="inline-block mr-2 hover:underline hover:underline-offset-2">
           <a href="/projects.html" class="${
