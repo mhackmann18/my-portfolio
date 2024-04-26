@@ -9,24 +9,11 @@
   <body>
     <div id="app">
       <div class="gradient-bg fixed inset-0 -z-10"></div>
-      <div class="p-4 font-gt_america flex">
+      <div class="p-4 font-gt_america flex relative overflow-hidden">
         <main class="text-slate-200 w-full text-lg max-w-5xl mx-auto">
-          <div class="max-w-3xl">
-            <!-- Intro -->
-            <section class="h-lvh flex justify-center flex-col text-left">
-              <h2 class="font-neutro_outline text-5xl mb-3">
-                Hello<br />
-                There<br /><span class="font-neutro text-5xl"
-                  >I&apos;m Matt Hack<br />
-                  mann</span
-                >
-              </h2>
-              <p class="text-secondary_text">
-                I&apos;m a frontend software developer based in Missouri. With a
-                keen eye for detail and design, I pride myself in creating
-                sharp, modern, and responsive user interfaces.
-              </p>
-
+          <!-- Mouse scroll -->
+          <div class="absolute inset-0 h-lvh">
+            <div class="flex justify-center h-full">
               <!-- Hide this image on scroll -->
               <dotlottie-player
                 id="mouse-scroll-animation"
@@ -38,6 +25,23 @@
                 loop
                 autoplay
               ></dotlottie-player>
+            </div>
+          </div>
+
+          <div class="max-w-xl">
+            <!-- Intro -->
+            <section class="h-lvh flex justify-center flex-col text-left">
+              <h2 class="font-neutro_outline text-5xl mb-2">
+                Hello<br />
+                There<br /><span class="font-neutro text-5xl"
+                  >I&apos;m Matt</span
+                >
+              </h2>
+              <p class="text-secondary_text">
+                I&apos;m a frontend software developer based in Missouri. With a
+                keen eye for detail and design, I pride myself in creating
+                sharp, modern, and responsive user interfaces.
+              </p>
             </section>
 
             <!-- Work History -->
@@ -55,9 +59,9 @@
 
             <!-- Guiding beliefs -->
             <section class="mb-32">
-              <h2 class="font-neutro text-5xl mb-8">
+              <h2 class="font-neutro text-5xl mb-6">
                 Guiding<br />
-                beliefs
+                Values
               </h2>
               <ul>
                 <li>
@@ -76,7 +80,7 @@
                   <p class="mb-6 text-secondary_text">
                     For some, there's work and then there's play. For me, it's
                     all play. I love what I do, and I'm always looking for new
-                    ways to improve my skills and learn new technologies.
+                    ways to improve my skills and pickup new technologies.
                   </p>
                 </li>
                 <li>
@@ -84,9 +88,9 @@
                     <span class="font-neutro">Be versatile</span>
                   </h2>
                   <p class="text-secondary_text">
-                    Though my focus is on the frontend, I believe that
-                    understanding the full software development lifecycle, from
-                    databases to devops, is necessary to succeed.
+                    Though my focus is on the frontend, I believe that having
+                    working knowledge of every role, from databases to DevOps,
+                    is necessary to succeed.
                   </p>
                 </li>
               </ul>
@@ -100,9 +104,9 @@
                 I love
               </h2>
               <p class="mb-6 text-secondary_text">
-                I&apos;ve worked with a wide array of technologies, but these
-                are some of my long-standing favorites: React.js, TypeScript,
-                Tailwind, and Docker.
+                I&apos;ve worked with a wide array of technologies, but some of
+                my long-standing favorites include React.js, TypeScript,
+                Tailwind CSS, and Docker.
               </p>
 
               <!-- Tech icons -->
@@ -131,7 +135,7 @@
             </section>
 
             <!-- Let's Connect -->
-            <section class="mb-32">
+            <section class="mb-[calc(30vh)]">
               <div class="">
                 <h2
                   class="leading-12 text-5xl font-neutro mb-2 w-full text-left"
@@ -139,9 +143,9 @@
                   Let&apos;s<br />Connect
                 </h2>
                 <div class="">
-                  <p class="mb-6 text-lg text-secondary_text">
+                  <p class="mb-2 text-lg text-secondary_text">
                     Whether you&apos;re a recruiter, a small business owner, or
-                    a fellow enthusiast, I&apos;d love to hear about any work
+                    a fellow enthusiast, I&apos;d love to hear about any new
                     opportunities.
                   </p>
                   <div class="flex items-center">
@@ -156,9 +160,10 @@
                       >mhackmann18@gmail.com</a
                     >
                   </div>
-                  <p class="text-xs mt-1">
-                    (Beware: My inbox operates on island time.)
-                  </p>
+                  <!-- <p class="text-xs mt-1">
+                    (Beware: My inbox operates on island time. I&apos;ll get
+                    back to you when I can!)
+                  </p> -->
                 </div>
               </div>
             </section>

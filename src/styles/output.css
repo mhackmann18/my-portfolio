@@ -683,6 +683,10 @@ video {
   margin-top: 1.25rem;
 }
 
+.mb-\[calc\(30vh\)\] {
+  margin-bottom: calc(30vh);
+}
+
 .inline-block {
   display: inline-block;
 }
@@ -739,6 +743,10 @@ video {
   width: 100%;
 }
 
+.w-lvw {
+  width: 100lvw;
+}
+
 .max-w-3xl {
   max-width: 48rem;
 }
@@ -749,6 +757,22 @@ video {
 
 .max-w-6xl {
   max-width: 72rem;
+}
+
+.max-w-2xl {
+  max-width: 42rem;
+}
+
+.max-w-xl {
+  max-width: 36rem;
+}
+
+.max-w-80 {
+  max-width: 20rem;
+}
+
+.max-w-20 {
+  max-width: 5rem;
 }
 
 .flex-col {
