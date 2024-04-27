@@ -8,7 +8,7 @@ export default {
         secondary_text: "#ccc",
         secondary: "#e2e8f0",
         tertiary: "#ffd339",
-        secondary_dark: "#181818",
+        secondary_dark: "black",
         transparent_black: "rgba(0, 0, 0, 0.75)",
       },
       fontFamily: {
